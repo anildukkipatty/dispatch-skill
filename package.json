@@ -1,0 +1,5 @@
+{
+  "name": "grassvm-skill",
+  "version": "1.0.0",
+  "files": ["skills"]
+}
