@@ -40,9 +40,7 @@ Other Agent Skills–compatible tools follow the same pattern: drop the `grass/`
 
 ## Configuration
 
-| Env var          | Default                              | Purpose                          |
-| ---------------- | ------------------------------------ | -------------------------------- |
-| `GRASS_API_URL`  | `https://api.codeongrass.com/v1/dispatch` | Override the dispatch endpoint.  |
+The skill has no configurable endpoints. It only ever contacts `https://api.codeongrass.com` over HTTPS — the host is hardcoded in the skill and cannot be overridden by env vars, config files, or user input. See the "Security & network" section in [`skills/grass-dispatch/SKILL.md`](skills/grass-dispatch/SKILL.md) for the full disclosure.
 
 ## Use
 
