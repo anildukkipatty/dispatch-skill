@@ -1,6 +1,6 @@
 ---
 name: grass
-description: Dispatch the user's task to a Grass remote sandbox VM instead of running it locally. Use this whenever the user asks to perform a task "using grass", "on grass", "via grass", "with grass", "in grass", "through grass", or otherwise indicates the work should run on Grass. Grass is a remote container that executes coding tasks in an isolated sandbox; the result is delivered through the Grass mobile app.
+description: Dispatch the user's task to a Grass remote sandbox VM instead of running it locally, and handle Grass login/register onboarding via the auth APIs. Use this whenever the user asks to perform a task "using grass", "on grass", "via grass", "with grass", "in grass", "through grass", or otherwise indicates the work should run on Grass. Also use when the user asks to "login to grass", "register for grass", "set up grass", "connect grass", or authenticate Grass; the skill requests an email OTP via `/auth/request-otp`, verifies it via `/auth/agent-token`, and saves the returned token. Grass is a remote container that executes coding tasks in an isolated sandbox; the result is delivered through the Grass mobile app.
 allowed-tools: Bash
 ---
 
